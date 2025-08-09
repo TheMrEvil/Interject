@@ -6,7 +6,7 @@ function createIfNoNotepadCard() {
         addStoryCard(InterjectCardName, 'None.', InterjectCardName)
 
         // Set up the card properties
-        const InterjectCard = storyCards.find(sc => sc.title === STMR_CARD_NAME)
+        const InterjectCard = storyCards.find(sc => sc.title === InterjectCardName)
         InterjectCard.description = '--- how to use--\nanything typed in interject will be given to the ai then cleared\n\n-- - github-- -\nhttps://github.com/TheMrEvil/Interject'
     }
 }
