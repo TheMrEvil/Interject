@@ -2,7 +2,7 @@ InterjectCardName = "Interject";
 Interjecttext = ''
 
 
-function createIfNoNotepadCard() {
+function createIfNoInterjectCard() {
     if (!storyCards.find(sc => sc.title === InterjectCardName)) {
         addStoryCard(InterjectCardName, 'None.', InterjectCardName)
 
@@ -14,7 +14,7 @@ function createIfNoNotepadCard() {
     }
 }
 function ICC(text) {
-    createIfNoNotepadCard()
+    createIfNoInterjectCard()
     InterjectCard = storyCards.find(sc => sc.title === InterjectCardName)
     if (InterjectCard.entry != '') {
         text += '<SYSTEM MESSAGE> Please keep in mind: ' + InterjectCard.entry + '</SYSTEM MESSAGE>'
